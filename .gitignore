@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+/.vs
+/cpp/.vs/aoc2023
+/cpp/x64/Debug
+/cpp/day_01/x64/Debug
