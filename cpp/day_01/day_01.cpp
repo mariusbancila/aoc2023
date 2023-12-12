@@ -1,8 +1,8 @@
 #include "../utils.h"
 
-int total_calibration(std::string const & path)
+int total_calibration(std::string_view path)
 {
-   std::ifstream input(path.c_str());
+   std::ifstream input(path.data());
 
    auto line_values = read_input(input) |
       std::views::transform([](auto& line) {
@@ -22,7 +22,7 @@ int total_calibration(std::string const & path)
    return total;
 }
 
-int total_calibration2(std::string const& path)
+int total_calibration2(std::string_view path)
 {
    std::map<std::string, int> digits
    {
@@ -57,7 +57,7 @@ int total_calibration2(std::string const& path)
       return 0;
       };
 
-   std::ifstream input(path.c_str());
+   std::ifstream input(path.data());
 
    auto line_values = read_input(input) |
       std::views::transform([&has_text_digit, &has_text_digit_reverse](auto& line) {      
