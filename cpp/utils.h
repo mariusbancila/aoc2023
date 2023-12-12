@@ -9,6 +9,7 @@
 #include <print>
 // containers
 #include <string>
+#include <string_view>
 #include <vector>
 #include <map>
 // utilities
