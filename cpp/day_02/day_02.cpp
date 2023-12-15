@@ -1,22 +1,6 @@
 #include "../utils.h"
 #include <regex>
 
-void trim(std::string& s)
-{
-   auto not_space = [](unsigned char c) { return !std::isspace(c); };
-
-   // erase the the spaces at the back first
-   // so we don't have to do extra work
-   s.erase(
-      std::ranges::find_if(s | std::views::reverse, not_space).base(),
-      s.end());
-
-   // erase the spaces at the front
-   s.erase(
-      s.begin(),
-      std::ranges::find_if(s, not_space));
-}
-
 int sum_of_ids(std::string_view path, int red, int green, int blue)
 {
    std::ifstream input(path.data());

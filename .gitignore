@@ -38,3 +38,5 @@
 *.user
 /cpp/day_03/x64/Debug
 /cpp/day_04
+/cpp/day_05/x64
+/cpp/x64/Release
