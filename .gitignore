@@ -40,3 +40,7 @@
 /cpp/day_04
 /cpp/day_05/x64
 /cpp/x64/Release
+/cpp/day_01/x64/Release/microsoft/STL
+/cpp/day_02/x64/Release/microsoft/STL
+/cpp/day_03/x64/Release/microsoft/STL
+/cpp/day_06/x64/Release
